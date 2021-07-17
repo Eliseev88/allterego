@@ -329,7 +329,7 @@ body {
     transition: bottom .2s linear 0s;
 }
 .fixed-footer {
-    /* position: fixed; */
+    /*position: fixed; */
     right: 0;
     bottom: 0;
     left: 0;
@@ -375,11 +375,11 @@ body {
     }
 }
 
-@media (max-width: 767.98px) {
-    .footer {
-        position: fixed;
-    }
-    .main {
-        margin-bottom: 71px;
-    }
-}
+/*@media (max-width: 767.98px) {*/
+/*    .footer {*/
+/*        position: fixed;*/
+/*    }*/
+/*    .main {*/
+/*        margin-bottom: 71px;*/
+/*    }*/
+/*}*/
