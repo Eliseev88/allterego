@@ -10,7 +10,7 @@ class PriceToStringService
 {
     public function turnUp ($collection)
     {
-        if ($collection->price) {
+        if (isset($collection->price)) {
             $price = strval($collection->price);
             $length = strlen($price);
             $first = '';
@@ -27,7 +27,6 @@ class PriceToStringService
 
             $collection->str_price = $first . ' ' . $second;
 
-            return $collection;
         } else {
             foreach ($collection as $product) {
                 $price = strval($product->price);
@@ -46,7 +45,7 @@ class PriceToStringService
 
                 $product['str_price'] = $first . ' ' . $second;
             }
-            return $collection;
         }
+        return $collection;
     }
 }
