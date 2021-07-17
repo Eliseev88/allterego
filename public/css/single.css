@@ -39,7 +39,8 @@
         background-color: #f16d7f;
         position: absolute;
         top: 98%;
-        left: 29%;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 1; }
 
     .order__title {
@@ -80,7 +81,7 @@
     .order__box {
       margin-bottom: 60px;
       display: flex;
-      justify-content: center; 
+      justify-content: center;
     }
 
     .order__column {
@@ -224,8 +225,8 @@
         fill: #f16d7f;
         transition: all .2s linear; }
 
-        /* select:focus > option:checked { 
-            background: #f16d7f !important;  
+        /* select:focus > option:checked {
+            background: #f16d7f !important;
         } */
 
 .modal {
