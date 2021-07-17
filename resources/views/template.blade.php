@@ -8,8 +8,8 @@
     <meta property="og:site_name" content="AllteregoDress">
     <meta property="og:url" content="http://allteregodress.com">
     <meta property="og:description" content="Women's designer clothes">
-    <meta property="og:image" content="/storage/img/favicon.jpg">
-    <link rel="shortcut icon" type="image/png" href="storage/img/favicon.jpg"/>
+    <meta property="og:image" content="/img/favicon.jpg">
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.jpg"/>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/bootstrap.bundle.js"></script>

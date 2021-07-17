@@ -15,10 +15,13 @@
     <main class="main container justify-content-center flex-wrap" id="main-content">
         <div id="carouselExampleIndicators" class="carousel slide max-width_carousel" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                @foreach($product->images as $key => $image)
+                    @if($key == 0)
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $key }}" class="active" aria-current="true" aria-label="Slide {{ $key + 1 }}"></button>
+                    @else
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $key }}" aria-label="Slide {{ $key + 1 }}"></button>
+                    @endif
+                @endforeach
             </div>
             <div class="carousel-inner">
                 @foreach($product->images as $key => $image)
@@ -45,8 +48,8 @@
         <!-- ORDER -->
         <section class="order center">
             <div class="order__wrapper">
-                <span class="order__suptitle">WOMEN COLLECTION</span>
-                <h3 class="order__title">Платье «Во имя розы»</h3>
+                <span class="order__suptitle">Женская коллекция</span>
+                <h3 class="order__title">{{ $product->title }}</h3>
                 <div class="order__text">
                     {{ $product->description }}
                 </div>
