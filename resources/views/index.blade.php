@@ -35,7 +35,6 @@
                         <div class="accordion-body">
                             <nav class="nav flex-column">
                                 <a href="" class="nav-link">история</a>
-                                <a href="" class="nav-link">скетчи</a>
                                 <a href="" class="nav-link">интервью</a>
                             </nav>
                         </div>
@@ -68,13 +67,13 @@
                 @foreach($products as $product)
                     <div class="col odd">
                         <a class="catalog__item" href="{{ route('product.show', ['category' => $product->category_id, 'product' => $product->id]) }}">
-                            <div class="catalog__bucket _anim-items">
+                            <div class="catalog__bucket _anim-items _anim-ho-hide">
                                 <span class="catalog__hidden_text">{{ $product->title }}</span>
                                 <p class="catalog__hidden_text catalog__hidden_text-price">{{ $product->str_price }} ₽</p>
                             </div>
                             <div class="catalog__photo">
                                 @foreach( $product->images as $image)
-                                    <img class="catalog__img _anim-items" src="storage/{{ $image->path }}" alt="#">
+                                    <img class="catalog__img _anim-items _anim-ho-hide" src="storage/{{ $image->path }}" alt="#">
                                 @endforeach
                             </div>
                         </a>

@@ -253,13 +253,13 @@ body {
     opacity: 1;
 }
 .catalog__item:hover .catalog__img {
-    filter: brightness(.4);
+    filter: brightness(.5);
     opacity: 0;
 }
 .catalog__item:hover .catalog__img:nth-child(2) {
     opacity: 1;
 }
-.catalog__item .catalog__img:nth-child(2)._active {
+.catalog__item .catalog__img._active {
     opacity: 1;
     filter: brightness(.5);
 }
@@ -372,6 +372,19 @@ body {
     }
     .nav-link {
         font-weight: 300;
+    }
+
+}
+
+@media (max-width: 768px) {
+    /*.catalog__bucket {*/
+    /*    transition: all .7s linear .4s;*/
+    /*}*/
+    .catalog__img:nth-child(2) {
+        display: none;
+    }
+    .catalog__item:hover .catalog__img {
+        opacity: 1;
     }
 }
 

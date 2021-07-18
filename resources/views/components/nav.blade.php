@@ -37,7 +37,6 @@
                                 <div class="accordion-body">
                                     <nav class="nav flex-column">
                                         <a href="" class="nav-link">история</a>
-                                        <a href="" class="nav-link">скетчи</a>
                                         <a href="" class="nav-link">интервью</a>
                                     </nav>
                                 </div>

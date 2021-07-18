@@ -65,8 +65,8 @@
       font-size: 14px;
       text-transform: uppercase; }
 
-      .order__descript:first-child {
-        margin-right: 44px; }
+      /*.order__descript:first-child {*/
+      /*  margin-right: 44px; }*/
 
       .order__descript span {
         color: #6f6e6e; }
@@ -85,6 +85,10 @@
     }
 
     .order__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
         max-width: 174px;
       width: 25%;
       position: relative; }
@@ -97,7 +101,7 @@
       text-align: center; }
 
     .order__substitute {
-      width: 100%;
+      width: 70%;
       height: 35px;
       position: relative;
       display: flex;
@@ -192,11 +196,8 @@
         border-color: #b6b6b6; }
 
     .order__btn {
-      width: 100%;
+      width: 80%;
       padding: 16px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       color: #ef5b70;
       font-family: 'Lato', sans-serif;
       font-size: 16px;

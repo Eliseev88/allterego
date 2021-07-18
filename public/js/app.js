@@ -32,7 +32,7 @@ if (animItems.length > 0) {
             const animItem = animItems[i];
             const animItemHeight = animItem.offsetHeight;
             const animItemOffset = offset(animItem).top;
-            const animStart = 0.9;
+            const animStart = 2;
 
             let animItemPoint = window.innerHeight - animItemHeight / animStart;
 
@@ -40,10 +40,12 @@ if (animItems.length > 0) {
                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
             }
 
-            if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight) && window.screen.width <= 767.98) {
+            if((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight) && window.screen.width <= 768) {
                 animItem.classList.add('_active');
             } else {
-                animItem.classList.remove('_active');
+                if(!animItem.classList.contains('_anim-ho-hide')) {
+                    animItem.classList.remove('_active');
+                }
             }
         }
     }
@@ -53,6 +55,9 @@ if (animItems.length > 0) {
             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         return {top: rect.top + scrollTop, left: rect.left + scrollLeft }
     }
+    setTimeout(() => {
+        animOnScroll();
+    }, 300);
 }
 
 // Скролл навбар

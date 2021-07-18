@@ -55,7 +55,6 @@
                 </div>
                 <div class="order__info">
                     <div class="order__descript">МАТЕРИАЛ: <span>{{ $product->fabric }}</span></div>
-                    <div class="order__descript">ДИЗАЙНЕР: <span>allterego</span></div>
                 </div>
                 <div class="order__price">{{ $product->str_price }} ₽</div>
                 <form action="POST" class="order__form">
