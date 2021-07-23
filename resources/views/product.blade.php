@@ -63,8 +63,9 @@
                             <div class="order__parameter">Выберите размер</div>
                             <div class="order__substitute substitute--size">
                                 <select class="order__select select--size" name="size" id="size">
-                                    <option class="order__option" selected>S</option>
-                                    <option class="order__option" selected>M</option>
+                                    @foreach($product->sizes as $size)
+                                        <option class="order__option">{{ \Illuminate\Support\Str::upper($size->size ) }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>

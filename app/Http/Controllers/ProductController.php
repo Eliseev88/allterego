@@ -44,7 +44,6 @@ class ProductController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Product  $product
-     * @return \Illuminate\Http\Response
      */
     public function show($categoryId, Product $product, PriceToStringService $priceToStringService)
     {

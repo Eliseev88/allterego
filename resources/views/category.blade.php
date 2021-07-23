@@ -74,7 +74,7 @@
                             </div>
                             <div class="catalog__photo">
                                 @foreach( $product->images as $image)
-                                    <img class="catalog__img _anim-items" src="storage/{{ $image->path }}" alt="#">
+                                    <img class="catalog__img _anim-items" src="../storage/{{ $image->path }}" alt="#">
                                 @endforeach
                             </div>
                         </a>
@@ -87,11 +87,14 @@
 
 <script>
     // Считаем количество продуктов в категории
-    let productsCount = document.getElementById("products_box").childElementCount;
-    console.log(productsCount)
-    if (productsCount == 2 && window.screen.width > 992) {
-        let all = document.getElementsByClassName('odd');
-        let first = all[0];
-        first.style.width = '50%';
-    }
+    setTimeout(() => {
+        let productsCount = document.getElementById("products_box").childElementCount;
+        console.log(productsCount)
+        if (productsCount === 2 && window.screen.width > 992) {
+            let all = document.getElementsByClassName('odd');
+            let first = all[0];
+            first.style.width = '50%';
+        }
+    }, 100)
+
 </script>

@@ -17,7 +17,7 @@ use \App\Http\Controllers\ProductController;
 */
 
 Route::get('/', [MainController::class, 'index'])->name('index');
-Route::get('/category_{category}', [CategoryController::class, 'show'])->name('category.show');
+Route::get('/categories/{category}', [CategoryController::class, 'show'])->name('category.show');
 Route::get('/{category}/{product}', [ProductController::class, 'show'])->name('product.show');
 
 Auth::routes();
