@@ -62,6 +62,9 @@ if (animItems.length > 0) {
 
 // Скролл навбар
 let navOpen = document.getElementById('scroll-div');
+if (window.screen.width < 992)  {
+    navOpen.classList.add('scroll_nav_open')
+}
 window.addEventListener('resize', () => {
   if (window.screen.width < 992)  {
     navOpen.classList.add('scroll_nav_open')
