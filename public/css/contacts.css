@@ -48,12 +48,15 @@
     /*    width: 100%;*/
     /*}*/
     .contacts__fixed {
-        position: fixed;
+        position: absolute;
         top: 50%;
         z-index: 99;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
         color: #fff;
+    }
+    .album {
+        position: relative;
     }
 }
 @media (min-width: 992px) {
@@ -68,7 +71,6 @@
     }
     .album {
         margin: 0 auto;
-        position: relative;
     }
     .contacts__fixed {
         margin-top: 40%;
