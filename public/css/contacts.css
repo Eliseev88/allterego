@@ -68,6 +68,7 @@
     }
     .album {
         margin: 0 auto;
+        position: relative;
     }
     .contacts__fixed {
         margin-top: 40%;
