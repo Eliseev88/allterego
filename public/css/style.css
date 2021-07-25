@@ -327,6 +327,7 @@ body {
     -moz-transition: bottom .2s ease-out 0s;
     -o-transition: bottom .2s ease-out 0s;
     transition: bottom .2s linear 0s;
+    z-index: 999;
 }
 .fixed-footer {
     /*position: fixed; */
