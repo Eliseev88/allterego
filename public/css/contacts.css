@@ -16,7 +16,7 @@
 }
 .carousel-item img {
     filter: brightness(.4);
-    height: calc(100vh - 165px);
+    height: calc(100vh - 166px);
     object-fit: cover;
 }
 .contacts__fixed {}
@@ -42,11 +42,11 @@
     .main {
         margin-bottom: 0;
     }
-    .album {
-        position: absolute;
-        left: 0;
-        width: 100%;
-    }
+    /*.album {*/
+    /*    position: absolute;*/
+    /*    left: 0;*/
+    /*    width: 100%;*/
+    /*}*/
     .contacts__fixed {
         position: fixed;
         top: 50%;
