@@ -59,7 +59,7 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFourH">
-                                <a href="#" class="accordion-link">Контакты</a>
+                                <a href="{{ route('contacts') }}" class="accordion-link">Контакты</a>
                             </h2>
                         </div>
                     </div>

@@ -73,4 +73,3 @@ window.addEventListener('resize', () => {
     navOpen.classList.remove('scroll_nav_open');
   }
 })
-

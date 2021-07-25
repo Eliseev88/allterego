@@ -19,6 +19,7 @@ use \App\Http\Controllers\ProductController;
 Route::get('/', [MainController::class, 'index'])->name('index');
 Route::get('/categories/{category}', [CategoryController::class, 'show'])->name('category.show');
 Route::get('/{category}/{product}', [ProductController::class, 'show'])->name('product.show');
+Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');
 
 Auth::routes();
 

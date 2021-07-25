@@ -24,4 +24,15 @@ class MainController extends Controller
            'products' => $products,
         ]);
     }
+
+    public function contacts ()
+    {
+        $categories = Category::all();
+        $images = Image::inRandomOrder()->limit(4)->get();
+
+        return view('contacts', [
+            'categories' => $categories,
+            'images' => $images
+        ]);
+    }
 }

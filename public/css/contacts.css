@@ -1,0 +1,78 @@
+.contacts__paragraph {
+    margin-top: 20px;
+}
+.contacts__link {
+    color: #fff;
+    transition: color .2s linear;
+}
+.contacts__link:hover {
+    color: #f16d7f;
+}
+.contacts__link:active {
+    color: #f16d7f;
+}
+.contacts__link:focus{
+    color: #f16d7f;
+}
+.carousel-item img {
+    filter: brightness(.4);
+    height: calc(100vh - 165px);
+    object-fit: cover;
+}
+.contacts__fixed {}
+.social {
+    display: flex;
+    justify-content: center;
+}
+.social a {
+    font-size: 30px;
+    padding: 10px;
+    transition: transform .2s linear;
+}
+.social a:hover {
+    transform: scale(1.2);
+}
+.fa-facebook {color: #3b5998;}
+.fa-instagram {color: #d84656;}
+.fa-vk {color: #2787f5;}
+.fa-telegram {color: #259fdc;}
+.fa-whatsapp {color: #47e864;}
+
+@media (max-width: 991px) {
+    .main {
+        margin-bottom: 0;
+    }
+    .album {
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+    .contacts__fixed {
+        position: fixed;
+        top: 50%;
+        z-index: 99;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: #fff;
+    }
+}
+@media (min-width: 992px) {
+    #carouselExampleSlidesOnly {
+        display: none;
+    }
+    .contacts {
+        color: #6f6e6e;
+    }
+    .contacts__link {
+        color: #6f6e6e;
+    }
+    .album {
+        margin: 0 auto;
+    }
+    .contacts__fixed {
+        margin-top: 40%;
+    }
+    .contacts__title {
+        font-weight: 300;
+    }
+}
