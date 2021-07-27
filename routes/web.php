@@ -17,9 +17,13 @@ use \App\Http\Controllers\ProductController;
 */
 
 Route::get('/', [MainController::class, 'index'])->name('index');
-Route::get('/categories/{category}', [CategoryController::class, 'show'])->name('category.show');
-Route::get('/{category}/{product}', [ProductController::class, 'show'])->name('product.show');
+Route::get('/categories/{category}', [CategoryController::class, 'show'])->name('category.show')
+    ->where(['category' => '\d+']);
+Route::get('/{category}/{product}', [ProductController::class, 'show'])->name('product.show')
+    ->where(['category' => '\d+', 'product' => '\d+']);
 Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');
+Route::get('/about', [MainController::class, 'about'])->name('about');
+Route::get('/interview', [MainController::class, 'interview'])->name('interview');
 
 Auth::routes();
 

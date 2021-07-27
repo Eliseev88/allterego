@@ -35,4 +35,18 @@ class MainController extends Controller
             'images' => $images
         ]);
     }
+
+    public function about ()
+    {
+        return redirect('/');
+    }
+
+    public function interview ()
+    {
+        $categories = Category::all();
+
+        return view('interview', [
+            'categories' => $categories,
+        ]);
+    }
 }

@@ -25,8 +25,8 @@
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <nav class="nav flex-column">
-                        <a href="" class="nav-link">история</a>
-                        <a href="" class="nav-link">интервью</a>
+                        <a href="{{ route('about') }}" class="nav-link">история</a>
+                        <a href="{{ route('interview') }}" class="nav-link">интервью</a>
                     </nav>
                 </div>
             </div>

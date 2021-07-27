@@ -143,11 +143,6 @@ body {
         -ms-transform: scale(1.2);
             transform: scale(1.2);
 }
-.fa-facebook {color: #3b5998;}
-.fa-instagram {color: #d84656;}
-.fa-vk {color: #2787f5;}
-.fa-telegram {color: #259fdc;}
-.fa-whatsapp {color: #47e864;}
 .header__iframe {
     font-size: 20px;
     -webkit-transition: all .2s linear;
